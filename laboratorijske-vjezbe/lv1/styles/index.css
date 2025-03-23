@@ -1,0 +1,84 @@
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+}
+
+/* Grid Areas */
+header {
+    grid-area: header;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+main {
+    grid-area: main;
+    background-color: #fff;
+    padding: 20px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #eee;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Flexbox for Main Content */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex-item {
+    flex: 1 1 calc(50% - 20px); /* Responsive two-column layout */
+    background-color: #fafafa;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.flex-ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* Links Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #130707;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
